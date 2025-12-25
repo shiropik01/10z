@@ -1,0 +1,15 @@
+print("Программа эмулирующую электронный замок.")
+correct_pin = 4590
+
+while True:
+    try:
+        ent_pin = int(input("Введите пин-код: "))
+    except:
+        print("Ошибка. Введите число!")
+        continue
+
+    if ent_pin == correct_pin:
+        print("Доступ разрешен.")
+        break
+    else:
+        print("Ошибка! Попробуйте еще раз.")
