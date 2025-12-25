@@ -1,0 +1,21 @@
+print("Программа для магазина, которая считает общую стоимость товаров в корзине. (0 - стоп) ")
+
+total = 0
+
+while True:
+    price = int(input("Введите цену товара : "))
+
+    if price == 0:
+        break
+
+    if price < 0:
+        print("Ошибка цены")
+        continue
+
+    total += price
+
+if total > 1000:
+    total = total * 0.9
+    print(f"Итого с 10% скидкой: {total:.0f}")
+else:
+    print(f"Итого: {total}")
