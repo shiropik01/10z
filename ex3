@@ -1,1 +1,21 @@
+print("Программа, которая находит самое большое число в введенной последовательности. (0 = стоп)")
 
+max_number = None
+
+while True:
+    num = int(input("Введите число: "))
+
+    if num == 0:
+        break
+
+    if num < 1:
+        print("Число должно быть натуральным!")
+        continue
+
+    if max_number is None or num > max_number:
+        max_number = num
+
+if max_number is not None:
+    print(f"Самое большое число: {max_number}")
+else:
+    print("Не было введено чисел")
