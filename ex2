@@ -1,16 +1,16 @@
 print("Программа, которая запрашивает у пользователя ввод трех чисел по очереди в порядке возрастания.")
 while True:
     try:
-        num1 = int(input("Введите первое число: "))
+        number_1 = int(input("Введите первое число: "))
         break
     except:
         print("Ошибка. Введите число!")
 
 while True:
     try:
-        num2 = int(input("Введите второе число: "))
+        number_2 = int(input("Введите второе число: "))
 
-        if num2 > num1:
+        if number_2 > number_1:
             break
         else:
             print("Ошибка. Второе число должно быть больше первого!")
@@ -20,9 +20,9 @@ while True:
 
 while True:
     try:
-        num3 = int(input("Введите третье число: "))
+        number_3 = int(input("Введите третье число: "))
 
-        if num3 > num2:
+        if number_3 > number_2:
             break
         else:
             print("Ошибка. Третье число должно быть больше второго!")
